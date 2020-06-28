@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 import sys
 
-class KMeansForPixels(): ## can be used for finding K dominant colors in an image
+class KMeansForPixels: ## can be used for finding K dominant colors in an image
 
     def __init__(self, image:Image.Image, K:int, max_iter=1000, resize_to=(100,100)):
 
@@ -76,8 +76,7 @@ class KMeansForPixels(): ## can be used for finding K dominant colors in an imag
                     print('Orphan cluster error, starting over...')
         return np.floor(centroids).astype(np.uint8), members, sd_error
     ## end k-means implementation
-
-## end class
+## end class def
 
 ## runtime example : >python KmeansForPixels.py <filename> <K>
 if __name__ == "__main__":
