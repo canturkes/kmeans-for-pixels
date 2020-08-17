@@ -79,7 +79,7 @@ class KMeansForPixels: ## can be used for finding K dominant colors in an image
 ## end class def
 
 ## runtime example : >python KmeansForPixels.py <filename> <K>
-if __name__ == "__main__":
+if __name__ == "__main__": ## if run as enrty point
     try:
         imfile = sys.argv[1]
         K = int(sys.argv[2])
